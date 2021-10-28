@@ -24,7 +24,10 @@ public class PersonenServiceImpl {
 	 *  Person im Repo speichern
 	 */
 	public void speichern(Person person) throws PersonenServiceException {
-		
+		if(person == null) throw new PersonenServiceException("Person darf nicht null sein");
+		if(person.getVorname() == null || person.getVorname().length() < 2) throw new PersonenServiceException("Vorname zu kurz");
+		if(person.getNachname() == null || person.getNachname().length() < 2) throw new PersonenServiceException("Nachname zu kurz");
+		if(person.getVorname().equals("Attila")) throw new PersonenServiceException("Antipath");
 	}
 
 }

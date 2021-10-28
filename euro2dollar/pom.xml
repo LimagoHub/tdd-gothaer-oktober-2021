@@ -6,10 +6,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.gothaer</groupId>
-	<artifactId>personenservice</artifactId>
+	<artifactId>euro2dollar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>personenservice</name>
+	<name>euro2dollar</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -33,12 +33,6 @@
 			<version>${jupiter-version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
-			<version>${jupiter-version}</version>
-			<scope>test</scope>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
 		<dependency>
 			<groupId>org.mockito</groupId>
@@ -51,7 +45,7 @@
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-junit-jupiter</artifactId>
 			<version>3.7.7</version>
-			<scope>test</scope>
+
 		</dependency>
 	</dependencies>
 
