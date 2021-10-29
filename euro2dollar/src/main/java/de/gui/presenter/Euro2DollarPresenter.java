@@ -49,7 +49,7 @@ public class Euro2DollarPresenter implements IEuro2DollarPresenter {
 	public void onRechnen() {
 		// Eurowert aus der Maske holen
 		// Eurowert wenn möglich in double wandeln
-		// Wenn nicht möglich Fehlermeldung in dollarfeld schreiben
+		// Wenn nicht möglich Fehlermeldung in dollarfeld schreiben (return)
 		// Eurowert an Model übergeben
 		// Ergebnis in String wandeln
 		// ergebnis in Maske schreiben
@@ -62,7 +62,7 @@ public class Euro2DollarPresenter implements IEuro2DollarPresenter {
 	 */
 	@Override
 	public void onBeenden() {  
-		view.close();
+		// view.close();
 	}
 	
 	/* (non-Javadoc)
